@@ -1,8 +1,11 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Abel');
 
+h1, h2, h4, h4, h5, h6, .navbar {
+    margin: 0;
+}
+
 .navbar {
-    // font-family: 'Abel', sans-serif;
     font-family: "Helvetica Neue", Helvetica;
     font-weight: 200;
     box-shadow: 0px 1px 3px #2a2a2a;
@@ -13,4 +16,35 @@
     font-family: "Helvetica Neue", Helvetica;
     font-weight: 100;
     color: white;
+}
+
+.hero {
+    background: image_url('hero.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 370px;
+    box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+.frosty {
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.frosty h1 {
+    font-family: 'Abel', sans-serif;
+    font-weight: 100;
+    text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+}
+
+.frosty h2 {
+    font-family: 'Abel', sans-serif;
+    font-weight: 200;
+    text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+}
+
+.btn {
+    border-radius: 0;
 }
