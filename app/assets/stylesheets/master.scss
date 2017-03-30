@@ -1,6 +1,12 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Abel');
 
+body {
+    background: image_url('naturalblack');
+    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+    color: white;
+}
+
 h1, h2, h4, h4, h5, h6, .navbar {
     margin: 0;
 }
@@ -47,4 +53,10 @@ h1, h2, h4, h4, h5, h6, .navbar {
 
 .btn {
     border-radius: 0;
+}
+
+.feature {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
