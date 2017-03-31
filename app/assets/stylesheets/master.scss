@@ -17,6 +17,10 @@ abbr[title] {
     text-decoration: none;
 }
 
+abbr[title="required"] {
+  display: none;
+}
+
 a {
     color: black;
 }
@@ -102,7 +106,7 @@ a:focus, a:hover {
     background: rgba(0, 0, 0, 0.1);
     border: 1px solid #ccc;
     border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-    margin-top: 10px;
+
     margin-bottom: 15px;
     padding: 10px;
 }
