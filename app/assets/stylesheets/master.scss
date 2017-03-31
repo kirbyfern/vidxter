@@ -13,6 +13,18 @@ h1, h2, h4, h4, h5, h6, .navbar {
     margin: 0;
 }
 
+abbr[title] {
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+a:focus, a:hover {
+    color: #0275d8;
+}
+
 .navbar-inverse .navbar-nav .nav-link:focus, .navbar-inverse .navbar-nav .nav-link:hover {
   color: rgba(99, 220, 201, 0.75);
 }
@@ -26,12 +38,12 @@ h1, h2, h4, h4, h5, h6, .navbar {
 }
 
 .navbar {
+    // box-shadow: 0px 1px 3px #2a2a2a;
     background: #E0EAFC; /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #E0EAFC , #CFDEF3); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #E0EAFC , #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: "Helvetica Neue", Helvetica;
     font-weight: 200;
-    box-shadow: 0px 1px 3px #2a2a2a;
 }
 
 .navbar-inverse a.navbar-brand {
@@ -41,12 +53,12 @@ h1, h2, h4, h4, h5, h6, .navbar {
 }
 
 .hero {
+    // box-shadow: 0px 3px 8px #2a2a2a;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 370px;
-    box-shadow: 0px 3px 8px #2a2a2a;
     background: #B3FFAB; /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #B3FFAB , #12FFF7); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #B3FFAB , #12FFF7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -79,6 +91,44 @@ h1, h2, h4, h4, h5, h6, .navbar {
     padding-right: 5%;
 }
 
-#inout {
-    border: none;
+.booyah-box h2, .booyah-box h1 {
+    margin: 10px;
+}
+
+.booyah-box {
+    -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+    -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+    box-shadow: 1px 1px 2px 0 #d0d0d0;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.rendered-devise {
+    cursor: pointer;
+}
+
+.sign-in {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 370px;
+    background: #3494E6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3494E6 , #EC6EAD); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3494E6 , #EC6EAD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.sign-in-lower {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 280px;
+    background: #3494E6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3494E6 , #EC6EAD); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3494E6 , #EC6EAD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
