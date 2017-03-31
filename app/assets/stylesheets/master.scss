@@ -2,9 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
 
 body {
-    background: image_url('naturalblack');
     font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-    color: white;
+    color: black;
+    background: #E0EAFC; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #E0EAFC , #CFDEF3); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #E0EAFC , #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 h1, h2, h4, h4, h5, h6, .navbar {
@@ -12,26 +14,30 @@ h1, h2, h4, h4, h5, h6, .navbar {
 }
 
 .navbar {
+    background: #E0EAFC; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #E0EAFC , #CFDEF3); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #E0EAFC , #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: "Helvetica Neue", Helvetica;
     font-weight: 200;
     box-shadow: 0px 1px 3px #2a2a2a;
-    background: image_url('naturalblack');
 }
 
 .navbar-inverse a.navbar-brand {
     font-family: "Helvetica Neue", Helvetica;
     font-weight: 100;
-    color: white;
+    color: black;
 }
 
 .hero {
-    background: image_url('hero.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 370px;
     box-shadow: 0px 3px 8px #2a2a2a;
+    background: #B3FFAB; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #B3FFAB , #12FFF7); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #B3FFAB , #12FFF7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .frosty {
@@ -59,4 +65,8 @@ h1, h2, h4, h4, h5, h6, .navbar {
     width: 100%;
     padding-left: 5%;
     padding-right: 5%;
+}
+
+#inout {
+    border: none;
 }
