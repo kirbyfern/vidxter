@@ -25,3 +25,6 @@ Desktop.ini
 # Thumbnail cache files
 ._*
 Thumbs.db
+
+# Ignore application configuration
+/config/application.yml
