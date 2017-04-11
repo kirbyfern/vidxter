@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 @import url('https://fonts.googleapis.com/css?family=Abel');
 
 body {
@@ -43,6 +44,18 @@ a:focus, a:hover {
 
 span {
     color: red;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul .header {
+    font-size: 22px;
+}
+
+ul .header .fa {
+    font-size: 18px;
 }
 
 .navbar-inverse .navbar-nav .nav-link:focus, .navbar-inverse .navbar-nav .nav-link:hover {
@@ -122,7 +135,6 @@ span {
     background: rgba(0, 0, 0, 0.1);
     border: 1px solid #ccc;
     border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-
     margin-bottom: 15px;
     padding: 10px;
 }
@@ -187,4 +199,29 @@ span {
     border: 1px solid;
     border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
     padding: 20px;
+}
+
+.section-li {
+    border: 1px solid #ccc;
+    border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+    padding: 20px;
+    margin: 20px;
+}
+
+.lessons li {
+    background: black;
+    color: white;
+    margin: 10px;
+    font-family: "Helvetica Neue", Helvetica;
+    font-weight: 100;
+    font-size: 15px;
+    padding: 8px;
+}
+
+.lessons li b {
+    font-size: 23px;
+}
+
+.lessons li p {
+    margin: 0;
 }

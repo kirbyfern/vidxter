@@ -12,16 +12,32 @@
 
     <ul class="sections">
         <% current_course.sections.rank(:row_order).each do |section| %>
-            <li data-update-url="<%= instructor_section_path(section) %>">
-                <%= section.title %>
+            <li data-update-url="<%= instructor_section_path(section) %>" class="section-li">
+                <div class="header float-left">
+                    <span class="fa fa-list-ul" aria-hidden="true"></span>
+                    <%= section.title %>
+                </div>
                 <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'btn btn-primary btn-sm' %>
-                <br />
+                <br class="clr" />
+                <br class="clr" />
                 <ul class="lessons">
                     <% section.lessons.rank(:row_order).each do |lesson| %>
                         <li data-update-url="<%= instructor_lesson_path(lesson) %>">
-                            <b><%= lesson.title %></b>
-                            -
-                            <%= lesson.subtitle %>
+                            <div class="row">
+                                <div class="col-1">
+                                    <br />
+                                    <span class="fa fa-list-ul" aria-hidden="true"></span>
+                                </div>
+                                <div class="col-11 text-center">
+                                    <p>
+                                        <b><%= lesson.title %></b>
+                                    </p>
+                                    <p>
+                                        <%= lesson.subtitle %>
+                                    </p>
+                                </div>
+                            </div>
+                            <br class="clr" />
                         </li>
                     <% end %>
                 </ul>
@@ -53,7 +69,7 @@
                     type: 'PUT',
                     url: ui.item.data('update-url'),
                     dataType: 'json',
-                    data: { lesson: { row_order_position: ui.item.index() } }
+                    data: { section: { row_order_position: ui.item.index() } }
                 });
             }
         });

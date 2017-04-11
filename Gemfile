@@ -22,6 +22,7 @@ gem "mini_magick"
 gem 'stripe'
 gem 'ranked-model'
 gem 'jquery-ui-rails'
+gem "font-awesome-rails"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
