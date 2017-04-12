@@ -92,10 +92,10 @@ ul .header .fa {
     -o-background-size: cover;
     background-size: cover;
     height: 370px;
-    background: #B3FFAB; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #B3FFAB , #12FFF7); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #B3FFAB , #12FFF7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+    background: #ff4e50; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff4e50, #f9d423); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff4e50, #f9d423); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
 
 .frosty {
     background: rgba(0, 0, 0, 0.2);
@@ -149,10 +149,11 @@ ul .header .fa {
     -o-background-size: cover;
     background-size: cover;
     height: 370px;
-    background: #3494E6; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #3494E6 , #EC6EAD); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #3494E6 , #EC6EAD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+    background: #ff4e50; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff4e50, #f9d423); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff4e50, #f9d423); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 150px;
+ }
 
 .sign-in-lower {
     -webkit-background-size: cover;
@@ -160,9 +161,9 @@ ul .header .fa {
     -o-background-size: cover;
     background-size: cover;
     height: 280px;
-    background: #3494E6; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #3494E6 , #EC6EAD); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #3494E6 , #EC6EAD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ff4e50; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff4e50, #f9d423); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff4e50, #f9d423); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .help-block {
