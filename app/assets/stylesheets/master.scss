@@ -179,6 +179,29 @@ ul .header .fa {
     background: linear-gradient(to right, #ff4e50, #f9d423); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.new-course {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 370px;
+    background: #ff4e50; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff4e50, #f9d423); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff4e50, #f9d423); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 80px;
+}
+
+.new-course-lower {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 280px;
+    background: #ff4e50; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff4e50, #f9d423); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff4e50, #f9d423); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .help-block {
     color: #ff3333;
     border: none;
