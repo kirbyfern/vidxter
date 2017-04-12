@@ -64,6 +64,8 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">×</span>
                     </button>
+                </div>
+                <div class="modal-header">
                     <h4 class="modal-title text-center" id="newSectionModalLabel">Add a new section</h4>
                 </div>
                 <%= simple_form_for @section, url: instructor_course_sections_path(current_course) do |f| %>
@@ -87,6 +89,8 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
+            </div>
+            <div class="modal-header">
                 <h4 class="modal-title" id="newLessonModalLabel">Add a new lesson</h4>
             </div>
             <%= simple_form_for @lesson, url: "#", html: {id: 'newLessonForm'} do |f| %>
