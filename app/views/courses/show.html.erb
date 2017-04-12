@@ -1,7 +1,8 @@
 <br />
-<div class="booyah-box col-10 offset-1">
-    <h1>
+<div class="booyah-box col-10 offset-1 course-index">
+    <h1 class="text-center">
         <%= @course.title %>
+        <br />
         <%= image_tag @course.image, class: 'img-fluid' %>
     </h1>
     <br />
@@ -43,11 +44,13 @@
             <% end %>
         </div>
 
-        <div class="col-sm-8 col-12">
+        <!-- <div class="col-sm-8 col-12">
             <%= @course.description %>
-        </div>
+        </div> -->
     </div>
+</div>
 
+<div class="booyah-box col-10 offset-1 course-index">
     <div class="col-12">
         <% @course.sections.rank(:row_order).each do |section| %>
             <br /><br />
