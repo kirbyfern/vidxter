@@ -16,18 +16,21 @@
         <h3>Amazing Courses</h3>
         <br />
         <p>Choose from any number of courses to study with amazing professors.</p>
+        <%= image_tag 'heart.png' %>
     </div>
 
     <div class="col-12 col-sm">
         <h3>Learn at Your Own Pace</h3>
         <br />
         <p>Enroll and access a courses archive of lessons.</p>
+        <%= image_tag 'watch.png' %>
     </div>
 
     <div class="col-12 col-sm">
         <h3>Join our Community</h3>
         <br />
         <p>Learn with a community of like-minded individuals.</p>
+        <%= image_tag 'theatre.png' %>
     </div>
 </div>
 <div>
@@ -44,9 +47,9 @@
                 <div class="col-12 col-sm-3">
                     <b>About</b>
                     <br />
-                    <%= link_to 'Team', '#' %>
+                    <%= link_to 'Team', team_path %>
                     <br />
-                    <%= link_to 'Careers', '#' %>
+                    <%= link_to 'Careers', career_path %>
                     <br />
                     <%= link_to 'Privacy Policy', privacy_path %>
                 </div>

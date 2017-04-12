@@ -29,6 +29,10 @@ body {
     font-weight: 100;
 }
 
+a:hover {
+    color: #ff4e50;
+}
+
 .social-button {
     margin: 4px;
 }
@@ -39,5 +43,5 @@ body {
 
 .mail a:hover {
     text-decoration: none;
-    color: red;
+    color: #ff4e50;
 }

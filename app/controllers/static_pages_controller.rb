@@ -8,4 +8,12 @@ class StaticPagesController < ApplicationController
 
     end
 
+    def career
+
+    end
+
+    def team
+
+    end
+
 end
