@@ -279,3 +279,20 @@ ul .header .fa {
 }
 
 // BUTTONS //
+.btn-outline-warning:hover {
+    color: #00AAAA;
+    background-color: #55FFFF;
+    border-color: #55FFFF;
+}
+
+.btn-outline-success:hover {
+    color: #00AA00;
+    background-color: #00FF55;
+    border-color: #00FF55;
+}
+
+.btn-outline-info:hover {
+    color: black;
+    background-color: #00AAFF;
+    border-color: #00AAFF;
+}
