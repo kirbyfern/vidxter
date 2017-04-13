@@ -1,17 +1,19 @@
 <br />
 <div class="new-course">
-    <div class="booyah-box col-6 offset-3">
-        <h1 class="text-center">Add a new course</h1>
-        <%= simple_form_for @course, url: instructor_courses_path do |f| %>
-            <%= f.input :title %>
-            <%= f.input :description %>
-            <%= f.input :cost %>
-            <%= f.input :image %>
+    <div class="container">
+        <div class="booyah-box col-12 col-md-6 offset-md-3">
+            <h1 class="text-center">Add a new course</h1>
+            <%= simple_form_for @course, url: instructor_courses_path do |f| %>
+                <%= f.input :title %>
+                <%= f.input :description %>
+                <%= f.input :cost %>
+                <%= f.input :image %>
+                <br />
+                <%= f.submit "Create", class: 'btn btn-primary' %>
+                <br />
+            <% end %>
             <br />
-            <%= f.submit "Create", class: 'btn btn-primary' %>
-            <br />
-        <% end %>
-        <br />
+        </div>
     </div>
 </div>
 <div class="new-course-lower">

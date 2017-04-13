@@ -1,24 +1,26 @@
 <br />
-<div class="booyah-box course-index">
-    <h1 class="text-center">
-        Learn something today
-    </h1>
-</div>
-
-<% @courses.each do |course| %>
-    <div class="booyah-box col-10 offset-1 course-index">
-        <h2 class="text-center">
-            <%= link_to course.title, course_path(course) %>
-            <br />
-            <br />
-            <%= image_tag course.image, class: 'img-fluid' %>
-        </h2>
-        <br />
-        <div class="row">
-            <div class="col-sm-4 col-12 text-center">
-                <%= link_to 'More Details', course_path(course), class: 'btn btn-primary btn-large' %>
-            </div>
-        </div>
-        <br class="clr" />
+<div class="container">
+    <div class="booyah-box col-md-10 offset-md-1 course-index">
+        <h1 class="text-center">
+            Learn something today
+        </h1>
     </div>
-<% end %>
+
+    <% @courses.each do |course| %>
+        <div class="booyah-box col-md-10 offset-md-1 course-index">
+            <h2 class="text-center">
+                <%= link_to course.title, course_path(course) %>
+                <br />
+                <br />
+                <%= image_tag course.image, class: 'img-fluid' %>
+            </h2>
+            <br />
+            <div class="row">
+                <div class="col-sm-4 col-12 text-center">
+                    <%= link_to 'More Details', course_path(course), class: 'btn btn-primary btn-large' %>
+                </div>
+            </div>
+            <br class="clr" />
+        </div>
+    <% end %>
+</div>

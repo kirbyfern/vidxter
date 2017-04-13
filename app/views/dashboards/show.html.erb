@@ -1,48 +1,52 @@
-<br />
-<div class="booyah-box course-index">
-    <h1 class="text-center">What I'm Learning</h1>
-</div>
-<div class="booyah-box col-10 offset-1 course-index">
-    <% current_user.enrolled_courses.each do |course| %>
-        <h3 class="text-center">
-            <%= link_to course.title, course_path(course) %>
-            <br />
-            <%= image_tag course.image, class: 'img-fluid' %>
-        </h3>
+<div class="container">
+    <br />
+    <div class="booyah-box col-md-10 offset-md-1 course-index">
+        <h1 class="text-center">What I'm Learning</h1>
+    </div>
+    <div class="booyah-box col-10 offset-1 course-index">
+        <% current_user.enrolled_courses.each do |course| %>
+            <h3 class="text-center">
+                <%= link_to course.title, course_path(course) %>
+                <br />
+                <%= image_tag course.image, class: 'img-fluid' %>
+            </h3>
 
-            <br />
-            <br />
-            <div class="row">
-                <div class="col-12 col-sm-4 text-center">
-                    <%= link_to "More Info", course_path(course), class: 'btn btn-primary' %>
+                <br />
+                <br />
+                <div class="row">
+                    <div class="col-12 col-sm-4 text-center">
+                        <%= link_to "More Info", course_path(course), class: 'btn btn-primary' %>
+                    </div>
                 </div>
-            </div>
-    <% end %>
+        <% end %>
 
-    <br class="clr" />
-    <br class="clr" />
+        <br class="clr" />
+        <br class="clr" />
+    </div>
 </div>
 
-<div class="booyah-box course-index">
-    <h1 class="text-center">
-        What I'm Teaching
-    </h1>
-</div>
-<div class="booyah-box col-10 offset-1 course-index">
-    <% current_user.courses.each do |course| %>
-        <h3 class="text-center">
-            <%= link_to course.title, course_path(course) %>
-            <br />
-            <%= image_tag course.image, class: 'img-fluid' %>
-        </h3>
-            <br />
-            <div class="row">
-                <div class="col-12 col-sm-4 text-center">
-                    <%= link_to "More Info", course_path(course), class: 'btn btn-primary' %>
+<div class="container">
+    <div class="booyah-box col-md-10 offset-md-1 course-index">
+        <h1 class="text-center">
+            What I'm Teaching
+        </h1>
+    </div>
+    <div class="booyah-box col-md-10 offset-md-1 course-index">
+        <% current_user.courses.each do |course| %>
+            <h3 class="text-center">
+                <%= link_to course.title, course_path(course) %>
+                <br />
+                <%= image_tag course.image, class: 'img-fluid' %>
+            </h3>
+                <br />
+                <div class="row">
+                    <div class="col-12 col-sm-4 text-center">
+                        <%= link_to "More Info", course_path(course), class: 'btn btn-primary' %>
+                    </div>
                 </div>
-            </div>
-    <% end %>
+        <% end %>
 
-    <br class="clr" />
-    <br class="clr" />
+        <br class="clr" />
+        <br class="clr" />
+    </div>
 </div>

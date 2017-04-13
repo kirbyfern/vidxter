@@ -1,66 +1,70 @@
 <br />
-<div class="booyah-box col-10 offset-1 course-index">
-    <h1 class="text-center">
-        <%= current_course.title %>
-        <br />
-        <br />
-        <%= image_tag current_course.image, class: 'img-fluid' %>
-        <br />
-    </h1>
+<div class="container">
+    <div class="booyah-box col-md-10 offset-md-1 course-index">
+        <h1 class="text-center">
+            <%= current_course.title %>
+            <br />
+            <br />
+            <%= image_tag current_course.image, class: 'img-fluid' %>
+            <br />
+        </h1>
 
 
-    <div class="text-center">
-        <%= link_to 'Preview as Student', course_path(current_course), class: 'btn btn-warning' %>
-        <br class="clr" />
-        <br />
-        <!-- Button trigger modal for new Section -->
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newSectionModal">
-            Add a new section
-        </button>
+        <div class="text-center">
+            <%= link_to 'Preview as Student', course_path(current_course), class: 'btn btn-warning' %>
+            <br class="clr" />
+            <br />
+            <!-- Button trigger modal for new Section -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newSectionModal">
+                Add a new section
+            </button>
+        </div>
     </div>
 </div>
 
-<div class="booyah-box col-10 offset-1 course-index">
-    <ul class="sections">
-        <% current_course.sections.rank(:row_order).each do |section| %>
-            <li data-update-url="<%= instructor_section_path(section) %>" class="section-li">
-                <div class="header float-left">
-                    <span class="fa fa-list-ul" aria-hidden="true"></span>
-                    <%= section.title %>
-                </div>
-                <!-- Button trigger modal for new Lesson -->
-                <button type="button" class="btn btn-primary float-right new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
-                    New Lesson
-                </button>
+<div class="container">
+    <div class="booyah-box col-md-10 offset-md-1 course-index">
+        <ul class="sections">
+            <% current_course.sections.rank(:row_order).each do |section| %>
+                <li data-update-url="<%= instructor_section_path(section) %>" class="section-li">
+                    <div class="header float-left">
+                        <span class="fa fa-list-ul" aria-hidden="true"></span>
+                        <%= section.title %>
+                    </div>
+                    <!-- Button trigger modal for new Lesson -->
+                    <button type="button" class="btn btn-primary float-right new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
+                        New Lesson
+                    </button>
 
-                <br class="clr" />
-                <br class="clr" />
+                    <br class="clr" />
+                    <br class="clr" />
 
-                <ul class="lessons">
-                    <% section.lessons.rank(:row_order).each do |lesson| %>
-                        <li data-update-url="<%= instructor_lesson_path(lesson) %>">
-                            <div class="row">
-                                <div class="col-1">
-                                    <br />
-                                    <span class="fa fa-list-ul" aria-hidden="true"></span>
+                    <ul class="lessons">
+                        <% section.lessons.rank(:row_order).each do |lesson| %>
+                            <li data-update-url="<%= instructor_lesson_path(lesson) %>">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <br />
+                                        <span class="fa fa-list-ul" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="col-11 text-center">
+                                        <p>
+                                            <b><%= lesson.title %></b>
+                                        </p>
+                                        <p>
+                                            <%= lesson.subtitle %>
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="col-11 text-center">
-                                    <p>
-                                        <b><%= lesson.title %></b>
-                                    </p>
-                                    <p>
-                                        <%= lesson.subtitle %>
-                                    </p>
-                                </div>
-                            </div>
-                            <br class="clr" />
-                        </li>
-                    <% end %>
-                </ul>
-                <br class="clr" />
-            </li>
-        <% end %>
-    </ul>
+                                <br class="clr" />
+                            </li>
+                        <% end %>
+                    </ul>
+                    <br class="clr" />
+                </li>
+            <% end %>
+        </ul>
+    </div>
 </div>
 
 <!-- New Section Modal -->
