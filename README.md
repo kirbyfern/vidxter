@@ -32,4 +32,4 @@ You can check the live version of the application at
 ## Screenshots
 ![Vidxter Homepage](https://raw.githubusercontent.com/kirbygit/vidxter/master/app/assets/images/vidxter-homepage.png "Vidxter Homepage")
 ![Vidxter Courses Interface](https://raw.githubusercontent.com/kirbygit/vidxter/master/app/assets/images/vidxter-courses.png "Vidxter Courses")
-![Vidxter Payment](https://raw.githubusercontent.com/kirbygit/vidxter/master/app/assets/images/vidxter-payment.png "Vidxter Payment w/ Stripe")
+![Vidxter Payment](https://raw.githubusercontent.com/kirbygit/vidxter/master/app/assets/images/vidxter-payment.png "Vidxter w/ Stripe Payment")
