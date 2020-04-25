@@ -30,6 +30,6 @@ You can check the live version of the application at
 [demo]: https://dev-stream-courses.herokuapp.com/
 
 ## Screenshots
-![Vidxter Homepage](https://raw.githubusercontent.com/kirbygit/vidxter/master/app/assets/images/vidxter-homepage.png "Vidxter Homepage")
-![Vidxter Courses Interface](https://raw.githubusercontent.com/kirbygit/vidxter/master/app/assets/images/vidxter-courses.png "Vidxter Courses")
-![Vidxter Payment](https://raw.githubusercontent.com/kirbygit/vidxter/master/app/assets/images/vidxter-payment.png "Vidxter w/ Stripe Payment")
+![Vidxter Homepage](https://github.com/kirbygit/vidxter/blob/master/app/assets/images/vidxter-homepage.jpg "Vidxter Homepage")
+![Vidxter Courses Interface](https://github.com/kirbygit/vidxter/blob/master/app/assets/images/vidxter-courses.jpg "Vidxter Courses")
+![Vidxter Payment](https://github.com/kirbygit/vidxter/blob/master/app/assets/images/vidxter-payment.jpg "Vidxter w/ Stripe Payment")
